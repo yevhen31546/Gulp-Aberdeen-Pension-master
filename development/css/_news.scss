@@ -1,0 +1,149 @@
+.news {
+  & .home-top-banner {
+    color: #FFFFFF;
+    min-height: 100px;
+
+    &.gradient.mobile {
+      font-size: 14px;
+      background-image: linear-gradient(to right, $color-base-dark-blue, $color-base-light-blue);
+      h1 {
+        font-family: $rounded-font-700;
+      }
+      @media screen and (min-width: 425px) {
+        display: none;
+      }
+    }
+
+    &.screen {
+      min-height: 500px;
+      background: url("../img/latest-news.png") no-repeat center bottom;
+      background-size: cover;
+      h1 {
+        font-family: $rounded-font-700;
+        font-size: 45px;
+      }
+      @media screen and (max-width: 424px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.navigation {
+  & .loader-line-wrapper {
+    height: 5px;
+    background-color: #CDCBCB;
+    width: 95%;
+    margin: 0 auto;
+    & .loader-line {
+      background-color: $color-base-dark-blue;
+      height: 5px;
+      //width: 99%;
+    }
+  }
+}
+
+.dots-container {
+  position: relative;
+  top: -27.5px;
+  @media screen and (max-width: 425px) {
+    top: -22.5px;
+  }
+}
+
+.dot-wrapper {
+  cursor: pointer;
+  & .outer-circle {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #CDCBCB;
+    @media screen and (max-width: 425px) {
+      width: 40px;
+      height: 40px;
+    }
+    & .inner-circle {
+      transition: .5s;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #B3B3B3;
+      @media screen and (max-width: 425px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.dot-wrapper{
+  &:hover .inner-circle {
+    background-color: $color-base-light-blue;
+  }
+  &.active-dot {
+    & .inner-circle {
+      background-color: $color-base-dark-blue;
+    }
+  }
+}
+
+article {
+  & .dot-wrapper {
+    width: 50px;
+    margin: 0 auto !important;
+  }
+}
+
+.icon-text {
+  font-size: 12px;
+}
+
+.custom-list-bullet {
+  list-style-image: url('../img/news/spring/bullet-point.png');
+  &.right {
+    direction: rtl;
+    @media screen and (max-width: 992px) {
+      direction: ltr;
+    }
+  }
+  &.left {
+    direction: ltr;
+  }
+}
+
+.timeline-section {
+  position: relative;
+  @media screen and (max-width: 991px) {
+    & .pull-right {
+      float: left !important;
+    }
+    & .text-right {
+      text-align: left;
+    }
+  }
+}
+
+.award-banner {
+  border-top: solid $color-base-dark-blue 30px;
+}
+
+.timeline-section-line {
+  margin-left: 50%;
+  width: 1px;
+  min-height: 100%;
+  position: absolute;
+  border-right: solid 1px black;
+  top: 0;
+  bottom: 0;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  touch-action: none;
+  cursor:not-allowed;
+}
+

@@ -1,0 +1,209 @@
+.home-top-banner {
+  color: #FFFFFF;
+  min-height: 100px;
+
+  &.gradient.mobile {
+    font-size: 14px;
+    background-image: linear-gradient(to right, $color-base-dark-blue, $color-base-light-blue);
+    h1 {
+      font-family: $rounded-font-700;
+    }
+    @media screen and (min-width: 425px) {
+      display: none;
+    }
+  }
+
+  &.screen {
+    min-height: 400px;
+    background: url("../img/piggy-banner.png") no-repeat center bottom;
+    background-size: cover;
+    h1 {
+      font-family: $rounded-font-700;
+      font-size: 45px;
+    }
+    @media screen and (max-width: 424px) {
+      display: none;
+    }
+  }
+}
+
+.aberdeen-btn {
+  display: block;
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 50px;
+  transition: .5s;
+  &.centered {
+    margin: 0 auto !important;
+  }
+  &.filled {
+    background-color: $yellow;
+    color: $color-base-dark-blue;
+    font-family: $rounded-font-700;
+  }
+  &:hover {
+    background-color: lighten($yellow, 10%);
+  }
+}
+
+.aberdeen-btn-blue {
+  border: none;
+  width: 250px;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: $color-base-light-blue;
+  color: #FFFFFF;
+  font-family: $rounded-font-700;
+}
+
+.yellow-light {
+  border: 3px solid $yellow;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: $rounded-font-700;
+}
+
+.container-committee {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.user-container {
+  padding: 10px;
+  font-size: 12px;
+  width: 150px;
+}
+
+.button-holder {
+  //text-align: center;
+  position: relative;
+  top: -48px;
+}
+
+.button-holder-double {
+    position: relative;
+    top: -60px; }
+
+a {
+  &.newsfile {
+    transition: .3s;
+    text-align: center;
+    margin: auto;
+    height: 176px;
+    width: 157px;
+    display:block;
+    background: url("../img/file.png") no-repeat center center;
+    &:hover {
+      background: url("../img/file-hover.png") no-repeat center center;
+    }
+  }
+}
+
+.banner-visible-large {
+  @media screen and (max-width: 1254px) {
+    display: none;
+  }
+}
+
+.banner-visible-small {
+  height: 381px;
+  text-align: center;
+  @media screen and (min-width: 1255px) {
+    display: none;
+  }
+}
+
+.chevron-down {
+  position: relative;
+  top: 80px;
+}
+
+.strongslogen{font-size:1.3em; font-family: $rounded-font-700;}
+.linedivider{display:block;}
+
+
+/*==========  Mobile WINNER BANNER==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+      #goblet{
+        height:650px;
+        background-image: url(../img/home/goblet/goblet_mobile.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      #goblet{
+        height:443px;
+        background-image: url(../img/home/goblet/goblet_690.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1000px) {
+      #winnerBanner{
+        background-image: url(../img/home/confetti/confetti_left_440.png), url(../img/home/confetti/confetti_right_440.png);
+        background-repeat: no-repeat;
+        background-position: left top, right top;
+      }
+      .pushGoblet{
+        height:40px;
+      }
+      #goblet{
+        height:395px;
+        background-image: url(../img/home/goblet/goblet_800.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+    }
+    /* XLarge Devices, Wide Screens */
+    @media only screen and (min-width : 1400px) {
+      #winnerBanner{
+        background-image: url(../img/home/confetti/confetti_left_640.png), url(../img/home/confetti/confetti_right_640.png);
+        background-repeat: no-repeat;
+        background-position: left top, right top;
+      }
+      .pushGoblet{
+        height:60px;
+      }
+      #goblet{// NOTE:
+        height:530px;
+        background-image: url(../img/home/goblet/goblet_1090.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+    }
+
+    /*==========  ROADSHOW==========*/
+
+        /* Custom, iPhone Retina */
+        @media only screen and (min-width : 320px) {
+              .pensionroadshow{
+                padding-bottom:30px;
+              }
+        }
+        /* Large Devices, Wide Screens */
+        @media only screen and (min-width : 1200px) {
+          .roadbg{
+            min-height: 320px;
+            background-image: url(../img/home/roadshow/road-400.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+          }
+          .pensionroadshow{
+            padding-bottom:0px;
+          }
+        }

@@ -1,0 +1,34 @@
+.contact-icons{
+  h5,h6,p{
+    padding: 0 15px;
+  }
+
+  @media (max-width: 991px){
+    h5,h6,p{
+      padding: 0;
+    }
+  }
+
+  img{
+    display: block;
+    margin: 20px auto 40px auto;
+    max-height: 74px;
+  }
+
+  .address{
+    max-width: 240px;
+    display: block;
+    margin: auto;
+    h5,h6{
+      font-weight: bold;
+      padding: 0;
+    }
+  }
+}
+
+a.contact-email{
+  text-emphasis: none;
+  &:link, :visited, :hover, :active {
+    text-decoration: none;
+  }
+}

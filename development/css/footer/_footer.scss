@@ -1,0 +1,16 @@
+.footer {
+  background: #DBDBDB;
+}
+.footercredit{
+  background-color:darken(#1aaeeb,7%);
+  color:lighten(#1aaeeb,10%);
+  padding:10px;
+  text-align:center;
+  font-size:0.9em;
+  a{
+    color:lighten(#1aaeeb,10%);
+  }
+  a:hover{
+    color:lighten(#1aaeeb,30%);
+  }
+}

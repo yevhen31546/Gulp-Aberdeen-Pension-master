@@ -1,0 +1,14 @@
+$base-font-family: MuseoSans-100, sans-serif, Helvetica;
+$base-font-size: 18px;
+
+$rounded-font-700: MuseoSansRounded-700, sans-serif, Helvetica;
+$rounded-font-900: MuseoSansRounded-900, sans-serif, Helvetica;
+
+$color-base-dark-blue: #122361;
+$color-base-light-blue: #00A3E3;
+$yellow: #FCC62F;
+
+@mixin base-font {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}

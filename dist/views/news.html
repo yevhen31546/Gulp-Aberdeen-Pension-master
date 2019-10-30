@@ -1,0 +1,149 @@
+<section class="news fadeInUp-1" ng-controller="GlobalController as GlobalCtrl">
+
+  <section class="home-top-banner gradient mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 padding-bottom-40 padding-top-40">
+          <h1 class="text-left">Latest News</h1>
+          <p class="text-left margin-bottom-20">
+            The Pension Communication Committee have outlined<br>
+            the various projects they are undertaking below.
+          </p>
+          <a class="aberdeen-btn yellow filled"
+             ng-click="GlobalCtrl.goToAnchor('powered_by')"
+             analytics-on="click"
+             analytics-on="Latest News READ ON">
+            READ ON</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-top-banner screen flex-container flex-col flex-justify-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 padding-bottom-40 padding-top-40">
+          <h1 class="text-left">Latest News</h1>
+          <p class="text-left margin-bottom-20">
+            The Pension Communication Committee have outlined<br>
+            the various projects they are undertaking below.
+          </p>
+          <a class="aberdeen-btn yellow filled"
+             ng-click="GlobalCtrl.goToAnchor('seasons')"
+             analytics-on="click" analytics-on="Latest News READ ON">READ ON</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<section class="padding-top-40 padding-bottom-40 fadeInUp-2" id="powered_by">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center">powered by</p>
+        <img data-ng-src="img/news/lemonade-logo.png"class="center-block margin-bottom-40"/>
+        <p class="text-center">click below to toggle between Pension Committee Communication Updates</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="seasons" class="navigation padding-top-40 padding-bottom-40  fadeInUp-3" ng-controller = "NewsMenuController">
+  <div class="container" >
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="loader-line-wrapper">
+          <div class="loader-line" ng-attr-style="width: {{ loader }}%; transition: 0.5s;"></div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 dots-container flex-container flex-row flex-space-between">
+
+        <!--wrapped in div for IE flex bug-->
+        <div>
+          <!--isert as above:   ui-sref=".summer" ui-sref-active="active-dot" ng-click="setActive('summer')"    -->
+          <a class="dot-wrapper" ui-sref=".summer-2017" ui-sref-active="active-dot" ng-click="setActive('summer-2017')">
+            <div class="outer-circle">
+              <div class="inner-circle"></div>
+            </div>
+            <img data-ng-src="{{ isSet === 'summer-2017' ? 'img/news/summer-icon-active.png' : 'img/news/summer-icon-inactive.png' }}" class="center-block margin-top-10 margin-bottom-10">
+            <div>
+              <p class="text-center icon-text bold-rounded margin-bottom-0">SUMMER</p>
+              <p class="text-center icon-text bold-rounded">2017</p>
+            </div>
+          </a>
+        </div>
+
+        <!--wrapped in div for IE flex bug-->
+        <div>
+          <!--isert as above:   ui-sref=".autumn" ui-sref-active="active-dot" ng-click="setActive('autumn')" OR disable calss   -->
+          <a class="dot-wrapper" ui-sref=".spring-2018" ui-sref-active="active-dot" ng-click="setActive('spring-2018')">
+            <div class="outer-circle">
+              <div class="inner-circle"></div>
+            </div>
+            <img data-ng-src="{{ isSet === 'spring-2018' ? 'img/news/spring-icon-active.png' : 'img/news/spring-icon-inactive.png' }}" class="center-block margin-top-10 margin-bottom-10">
+            <div>
+              <p class="text-center icon-text bold-rounded margin-bottom-0">SPRING</p>
+              <p class="text-center icon-text bold-rounded">2018</p>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <!--isert as above:   ui-sref=".winter" ui-sref-active="active-dot" ng-click="setActive('winter')"    -->
+          <a class="dot-wrapper" ui-sref=".autumn-2018" ui-sref-active="active-dot" ng-click="setActive('autumn-2018')">
+            <div class="outer-circle">
+              <div class="inner-circle"></div>
+            </div>
+            <img data-ng-src="{{ isSet === 'autumn-2018' ? 'img/news/autumn-icon-active.png' : 'img/news/autumn-icon-inactive.png' }}" class="center-block margin-top-10 margin-bottom-10">
+            <div>
+              <p class="text-center icon-text bold-rounded margin-bottom-0">AUTUMN</p>
+              <p class="text-center icon-text bold-rounded">2018</p>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <!--isert as above:   ui-sref=".winter" ui-sref-active="active-dot" ng-click="setActive('winter')"    -->
+          <a class="dot-wrapper" ui-sref=".spring-2019" ui-sref-active="active-dot" ng-click="setActive('spring-2019')">
+            <div class="outer-circle">
+              <div class="inner-circle"></div>
+            </div>
+            <img data-ng-src="{{ isSet === 'spring-2019' ? 'img/news/spring-icon-active.png' : 'img/news/spring-icon-inactive.png' }}" class="center-block margin-top-10 margin-bottom-10">
+            <div>
+              <p class="text-center icon-text bold-rounded margin-bottom-0">SPRING</p>
+              <p class="text-center icon-text bold-rounded">2019</p>
+            </div>
+          </a>
+        </div>
+
+        <!--wrapped in div for IE flex bug-->
+        <div>
+          <a class="dot-wrapper" ui-sref=".summer-2019" ui-sref-active="active-dot" ng-click="setActive('summer-2019')">
+            <div class="outer-circle">
+              <div class="inner-circle"></div>
+            </div>
+            <img data-ng-src="{{ isSet === 'summer-2019' ? 'img/news/spring-icon-active.png' : 'img/news/spring-icon-inactive.png' }}" class="center-block margin-top-10 margin-bottom-10">
+            <div>
+              <p class="text-center icon-text bold-rounded margin-bottom-0">SUMMER</p>
+              <p class="text-center icon-text bold-rounded">2019</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <hr class="divider">
+  </div>
+</section>
+
+<section>
+  <div ui-view></div>
+</section>

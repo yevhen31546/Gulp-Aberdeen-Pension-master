@@ -1,0 +1,12 @@
+{
+  "classPrefix": "",
+  "options": [
+    "html5shiv",
+    "html5printshiv",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "css/flexbox",
+    "css/gradients"
+  ]
+}

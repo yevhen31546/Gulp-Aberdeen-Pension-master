@@ -1,0 +1,64 @@
+.navbar {
+  height: 100px;
+  background: #FFFFFF;
+  width:100%;
+
+  a.navbar-brand {
+    padding-top: 18px;
+  }
+
+  .nav.navbar-nav.navbar-right {
+    z-index: 100;
+    background: #FFFFFF;
+    margin-top: 25px;
+    @media screen and (max-width: 767px) {
+      margin-top: 100px;
+      display: block;
+      position: absolute;
+      width: 100%;
+      &.off {
+        transform: translateX(-100%);
+        transition: .3s;
+      }
+      &.on {
+        transform: translateX(0);
+        transition: .5s;
+      }
+    }
+  }
+
+  button.rounded-button-menu {
+    height: 50px;
+    width: 50px;
+    background: #00A3E6;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    outline:none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    & .rect {
+      transition: .2s;
+      margin: 5px auto;
+      border-radius: 5px;
+      height: 4px;
+      width: 30px;
+      background-color: #FFFFFF;
+      display: block;
+    }
+
+    &:hover {
+      & .rect:nth-child(2) {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.navbar-default .navbar-nav > li > a.active {
+  color: #00A3E6;
+}

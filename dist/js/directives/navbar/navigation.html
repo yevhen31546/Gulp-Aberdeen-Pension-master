@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="GlobalController as GlobalCtrl">
+
+  <button class="rounded-button-menu" ng-click="toggleMenu()">
+    <span class="rect"></span>
+    <span class="rect"></span>
+    <span class="rect"></span>
+  </button>
+
+  <div class="container">
+    <a class="navbar-brand" href="" ui-sref="/">
+      <img class="img-responsive" ng-src="img/navigation/logo-top.png">
+    </a>
+
+    <ul class="nav navbar-nav navbar-right" ng-class="menuON ? 'on' : 'off'">
+      <li ><a ui-sref-active="active" ui-sref="/" ng-click="toggleMenu()">Home</a></li>
+      <li ><a ui-sref-active="active" ui-sref="news.summer-2019" ng-click="toggleMenu()">Latest News</a></li>
+      <li ><a ui-sref-active="active" ui-sref="contact" ng-click="toggleMenu()">Contact</a></li>
+      <li ><a ui-sref-active="active" ng-href="#!/home#resource" ng-click="toggleMenu(); GlobalCtrl.goToAnchor('resource')">Resource Centre</a></li>
+    </ul>
+  </div>
+</nav>
+<!--<div class="page-overlay" ng-class="{show: NavCtrl.navOpen}" ng-click="NavCtrl.close()"></div>-->
